@@ -1,2 +1,1 @@
-# bloco.cc
-Bloco landing page
+# new ways
