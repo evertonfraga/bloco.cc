@@ -104,6 +104,11 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../images/bg-workshop.jpg); }
+  section.book {
+    background-color: #595959;
+    text-align: center; }
+    section.book iframe {
+      margin: 0 auto; }
   section.valores {
     background-position: 50%;
     background-attachment: fixed;

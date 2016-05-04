@@ -145,6 +145,15 @@ section {
 		background-image: url(../images/bg-workshop.jpg);
 	}
 
+	&.book {
+		background-color: #595959;
+		text-align: center;
+		
+		iframe {
+			margin: 0 auto;
+		}
+	}
+
 	&.valores {
 		@include huge-bg;
 		background-image: url(../images/bg-bloco.png);
