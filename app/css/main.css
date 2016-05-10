@@ -26,11 +26,14 @@ section {
   section.header {
     height: 100vh;
     background-position: 50%;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #1A1A1A; }
+    @media (min-width: 1024px) {
+      section.header {
+        background-attachment: fixed; } }
     section.header h1 {
       width: 250px;
       height: 111px;
@@ -47,12 +50,15 @@ section {
       margin-bottom: 3rem; }
   section.description {
     background-position: 50%;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../images/bg-02.jpg);
     padding: 10em 0; }
+    @media (min-width: 1024px) {
+      section.description {
+        background-attachment: fixed; } }
     section.description .description-text {
       margin-top: 5.5rem;
       margin-bottom: 3rem; }
@@ -86,32 +92,44 @@ section {
         display: block; } }
   section.external-area {
     background-position: 50%;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../images/bg-externa.jpg); }
+    @media (min-width: 1024px) {
+      section.external-area {
+        background-attachment: fixed; } }
   section.sala-multiuso {
     background-position: 50%;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../images/bg-multiuso.jpg); }
+    @media (min-width: 1024px) {
+      section.sala-multiuso {
+        background-attachment: fixed; } }
   section.cozinha {
     background-position: 50%;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../images/bg-cozinha.jpg); }
+    @media (min-width: 1024px) {
+      section.cozinha {
+        background-attachment: fixed; } }
   section.workshop {
     background-position: 50%;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../images/bg-workshop.jpg); }
+    @media (min-width: 1024px) {
+      section.workshop {
+        background-attachment: fixed; } }
   section.book {
     background-color: #595959;
     box-shadow: inset 0 -40px 40px -20px rgba(0, 0, 0, 0.5);
@@ -126,11 +144,14 @@ section {
           height: 500px; } }
   section.valores {
     background-position: 50%;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../images/bg-bloco.jpg); }
+    @media (min-width: 1024px) {
+      section.valores {
+        background-attachment: fixed; } }
     section.valores .aluguel li {
       list-style: none;
       margin-bottom: 1em; }
