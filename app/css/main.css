@@ -275,7 +275,8 @@ section {
       -webkit-transition: 200ms ease-out all;
       -moz-transition: 200ms ease-out all;
       transition: 200ms ease-out all;
-      left: 0; }
+      left: 0;
+      transition: 200ms linear all; }
     section.features img {
       display: block; }
     section.features .row:first-child {
