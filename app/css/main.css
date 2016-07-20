@@ -79,7 +79,8 @@ body {
 
 section {
   box-sizing: border-box;
-  padding: 4em 0; }
+  padding: 4em 0;
+  position: relative; }
   section h2 a {
     color: white; }
   section.header {
@@ -102,18 +103,28 @@ section {
       background-repeat: no-repeat;
       background-position: 50%;
       background-size: contain;
-      text-indent: -5000px; }
+      text-indent: -5000px;
+      position: relative;
+      z-index: 1; }
     section.header .tagline p {
       font-size: 2.2rem;
       font-family: 'LetterGothic';
       margin-bottom: 3rem; }
+    section.header video {
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      width: 100%;
+      height: 100vh;
+      object-fit: cover; }
   section.description {
     background-position: 50%;
     /*background-attachment: fixed;*/
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(../images/bg-02.jpg);
+    background-image: url(../images/bg-bloco.jpg);
     padding: 10em 0; }
     @media (min-width: 1024px) {
       section.description {
@@ -149,87 +160,6 @@ section {
     @media (min-width: 768px) {
       section .logo-small {
         display: block; } }
-  section.external-area {
-    background-position: 50%;
-    /*background-attachment: fixed;*/
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(../images/bg-externa.jpg); }
-    @media (min-width: 1024px) {
-      section.external-area {
-        background-attachment: fixed; } }
-  section.sala-multiuso {
-    background-position: 50%;
-    /*background-attachment: fixed;*/
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(../images/bg-multiuso.jpg); }
-    @media (min-width: 1024px) {
-      section.sala-multiuso {
-        background-attachment: fixed; } }
-  section.cozinha {
-    background-position: 50%;
-    /*background-attachment: fixed;*/
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(../images/bg-cozinha.jpg); }
-    @media (min-width: 1024px) {
-      section.cozinha {
-        background-attachment: fixed; } }
-  section.workshop {
-    background-position: 50%;
-    /*background-attachment: fixed;*/
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(../images/bg-workshop.jpg); }
-    @media (min-width: 1024px) {
-      section.workshop {
-        background-attachment: fixed; } }
-  section.book {
-    background-color: #595959;
-    box-shadow: inset 0 -40px 40px -20px rgba(0, 0, 0, 0.5);
-    text-align: center; }
-    section.book iframe {
-      margin: 0 auto;
-      width: 95%;
-      height: 400px; }
-      @media (min-width: 768px) {
-        section.book iframe {
-          width: 800px;
-          height: 500px; } }
-  section.valores {
-    background-position: 50%;
-    /*background-attachment: fixed;*/
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(../images/bg-bloco.jpg); }
-    @media (min-width: 1024px) {
-      section.valores {
-        background-attachment: fixed; } }
-    section.valores .aluguel li {
-      list-style: none;
-      margin-bottom: 1em; }
-    section.valores span {
-      display: inline-block;
-      border: 1px solid #ccc;
-      background-color: rgba(0, 0, 0, 0.9);
-      padding: 3px 8px 1px;
-      line-height: 1.3; }
-    section.valores h3 {
-      background-color: rgba(0, 0, 0, 0.3);
-      width: 100px;
-      height: 100px;
-      border: 1px solid #fff;
-      border-radius: 50%;
-      line-height: 105px;
-      text-align: center;
-      box-shadow: inset 0 0 50px 10px black;
-      font-size: 18px; }
   section.people-we-love {
     background-color: white; }
     section.people-we-love h2 {
@@ -247,9 +177,27 @@ section {
           opacity: 1; }
       section.people-we-love ul img {
         width: 90px; }
-        @media (min-width: 768px) {
-          section.people-we-love ul img {
-            width: auto; } }
+  section.agenda {
+    background-position: 50%;
+    /*background-attachment: fixed;*/
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/bg-03.jpg); }
+    @media (min-width: 1024px) {
+      section.agenda {
+        background-attachment: fixed; } }
+    section.agenda ul {
+      list-style-type: none; }
+    section.agenda li .img-container {
+      height: 0;
+      padding-bottom: 56%;
+      overflow: hidden;
+      margin-bottom: 1em; }
+    section.agenda li p {
+      margin: .5em 0; }
+    section.agenda li img {
+      width: 100%; }
   section.features {
     background-position: 50%;
     /*background-attachment: fixed;*/
@@ -260,6 +208,20 @@ section {
     @media (min-width: 1024px) {
       section.features {
         background-attachment: fixed; } }
+    section.features .stacked-gallery {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch; }
+      section.features .stacked-gallery li {
+        width: 30%;
+        flex-grow: 1;
+        margin: 0.2em; }
+        section.features .stacked-gallery li img {
+          object-fit: cover; }
+      section.features .stacked-gallery li:first-child {
+        flex-grow: 4; }
     section.features .gallery {
       display: block;
       height: 0;
@@ -299,6 +261,17 @@ section {
         background-attachment: fixed; } }
     section.localizacao iframe {
       width: 100%; }
+  section.contato {
+    background-color: #fff;
+    background-position: 50%;
+    /*background-attachment: fixed;*/
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/bg-03.jpg); }
+    @media (min-width: 1024px) {
+      section.contato {
+        background-attachment: fixed; } }
   section footer {
     text-align: center;
     margin: 10rem 0; }

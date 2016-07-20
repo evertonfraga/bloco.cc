@@ -134,6 +134,8 @@ body {
 section {
 	box-sizing: border-box;
 	padding: 4em 0;
+	position: relative;
+
 	h2 a {
 		color: white;	
 	}
@@ -153,6 +155,8 @@ section {
 			background-position: 50%;
 			background-size: contain;
 			text-indent: -5000px;
+			position: relative;
+			z-index: 1;
 		}	
 		.tagline {
 			p {
@@ -161,11 +165,21 @@ section {
 				margin-bottom: 3rem;
 			}
 		}
+
+		video {
+			position: fixed;
+			left: 50%;
+			top: 50%;
+			transform: translateX(-50%) translateY(-50%);
+			width: 100%;
+			height: 100vh;
+			object-fit: cover;
+		}
 	}
 
 	&.description {
 		@include huge-bg;
-		background-image: url(../images/bg-02.jpg);
+		background-image: url(../images/bg-bloco.jpg);
 		padding: 10em 0;
 
 		.description-text {
@@ -212,71 +226,6 @@ section {
 		}
 	}
 
-	&.external-area {
-		@include huge-bg;
-		background-image: url(../images/bg-externa.jpg);
-	}
-
-	&.sala-multiuso {
-		@include huge-bg;
-		background-image: url(../images/bg-multiuso.jpg);
-	}
-
-	&.cozinha {
-		@include huge-bg;
-		background-image: url(../images/bg-cozinha.jpg);
-	}
-
-	&.workshop {
-		@include huge-bg;
-		background-image: url(../images/bg-workshop.jpg);
-	}
-
-	&.book {
-		background-color: #595959;
-		box-shadow: inset 0 -40px 40px -20px rgba(0,0,0,.5);
-		text-align: center;
-		
-		iframe {
-			margin: 0 auto;
-			width: 95%;
-			height: 400px;
-			@media (min-width: 768px) {
-				width: 800px;
-				height: 500px;
-			}
-		}
-	}
-
-	&.valores {
-		@include huge-bg;
-		background-image: url(../images/bg-bloco.jpg);
-
-		.aluguel li {
-			list-style: none;
-			margin-bottom: 1em;
-		}
-		span {
-			display: inline-block;
-			border: 1px solid #ccc;
-			background-color: rgba(0,0,0,0.9);
-			padding: 3px 8px 1px;
-			line-height: 1.3;
-		}
-
-		h3 {
-			background-color: rgba(0,0,0,0.3);
-			width: 100px;
-			height: 100px;
-			border: 1px solid #fff;
-			border-radius: 50%;
-			line-height: 105px;
-			text-align: center;
-			box-shadow: inset 0 0 50px 10px rgba(0,0,0,1);
-			font-size: 18px;
-		}
-	}
-
 	&.people-we-love {
 		background-color: white;
 		h2 {
@@ -297,9 +246,30 @@ section {
 			}
 			img {
 				width: 90px;
-				@media (min-width: 768px) {
-					width: auto;
-				}
+			}
+		}
+	}
+
+	&.agenda {
+		@include huge-bg;
+		background-image: url(../images/bg-03.jpg);
+
+		ul {
+			list-style-type: none;
+		}
+		li {
+			.img-container {
+				height: 0;
+				padding-bottom: 56%;
+				overflow: hidden;
+				margin-bottom: 1em;
+			}
+			p {
+				margin: .5em 0;
+			}
+			img {
+				width: 100%;
+
 			}
 		}
 	}
@@ -307,6 +277,27 @@ section {
 	&.features {
 		@include huge-bg;
 		background-image: url(../images/bg-multiuso.jpg);
+
+		.stacked-gallery {
+			list-style-type: none;
+			padding: 0;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: stretch;
+			li {
+				width: 30%;
+				flex-grow: 1;
+				margin: 0.2em;
+				img {
+				    object-fit: cover;
+				}
+			}
+			li:first-child {
+				flex-grow: 4;
+
+			}
+		}
+
 		.gallery {
 			display: block;
 			height: 0;
@@ -349,6 +340,12 @@ section {
 		iframe {
 			width: 100%;
 		}
+	}
+	
+	&.contato {
+		background-color: #fff;
+		@include huge-bg;
+		background-image: url(../images/bg-03.jpg);
 	}
 
 	footer {
