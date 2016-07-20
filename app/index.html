@@ -310,7 +310,7 @@
   <script src="js/jquery.stellar.min.js"></script>
   <script src="js/jquery.scrollspy.min.js"></script>
   <script src="js/countdown.min.js"></script>
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&key=AIzaSyCpFtJEYLy1dfc20iVM8R783j20GYdXanI"></script>
 
   <script>
     var isMobile = {
@@ -419,26 +419,6 @@
       // });
       // infowindow.open(map,marker);
       map.panBy(0, -40);
-
-      $('video').on('loadeddata', function(){
-        console.info('Video loaded');
-      });
-
-      $('video').on('canplaythrough', function(){
-        console.info('Video canplaythrough');
-      });
-
-      $('video').on('emptied', function(){
-        console.info('Video emptied');
-      });
-
-      $('video').on('stalled', function(){
-        console.info('Video stalled');
-      });
-
-      $('video').on('waiting', function(){
-        console.info('Video waiting');
-      });
 
     });
   </script>
