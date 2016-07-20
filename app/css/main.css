@@ -77,6 +77,10 @@ body {
     -webkit-transform: scaleX(1);
     transform: scaleX(1); }
 
+a {
+  color: #7d7d7d;
+  text-decoration: none; }
+
 section {
   box-sizing: border-box;
   padding: 4em 0;
