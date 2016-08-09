@@ -368,3 +368,25 @@ section.header, section.localizacao {
 
 .modal-picture {
   cursor: default; }
+
+.am-container .am-wrapper {
+  float: left;
+  position: relative;
+  overflow: hidden; }
+.am-container .am-wrapper img {
+  position: absolute;
+  outline: none; }
+.am-container a {
+  cursor: default; }
+.am-container .espaco-desc {
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  padding: 1.5rem 1.5rem 0;
+  color: #fff; }
+  .am-container .espaco-desc h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem; }
+  .am-container .espaco-desc p {
+    font-size: 0.8em;
+    margin-bottom: 0; }

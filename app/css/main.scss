@@ -501,3 +501,35 @@ section.header, section.localizacao {
 .modal-picture {
 	cursor: default;
 }
+
+
+// Automatic montage plugin
+.am-container {
+	.am-wrapper{
+		float:left;
+		position:relative;
+		overflow:hidden;
+	}
+	.am-wrapper img{
+		position:absolute;
+		outline:none;
+	}
+	a {
+		cursor: default;
+	}
+	.espaco-desc {
+		overflow: auto;
+		background-color: rgba(0,0,0,0.5);
+		box-sizing: border-box;
+		padding: 1.5rem 1.5rem 0;
+		color: #fff;
+		h3 {
+			font-size: 2.5rem;
+			margin-bottom: 1rem;
+		}
+		p {
+			font-size: 0.8em;
+			margin-bottom: 0;
+		}
+	}
+}
