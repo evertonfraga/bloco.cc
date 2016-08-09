@@ -172,11 +172,12 @@ section {
       margin-top: 2em;
       display: flex;
       flex-wrap: wrap;
-      justify-content: center; }
+      justify-content: space-between;
+      align-items: center; }
       section.people-we-love ul li {
         opacity: .7;
         transition: 150ms linear opacity;
-        margin: 1em; }
+        margin: 0.5em; }
         section.people-we-love ul li:hover {
           opacity: 1; }
       section.people-we-love ul img {
