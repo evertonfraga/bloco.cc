@@ -131,7 +131,11 @@ section {
       transform: translateX(-50%) translateY(-50%);
       width: 100%;
       height: 100vh;
-      object-fit: cover; }
+      object-fit: cover;
+      display: none; }
+    @media (min-width: 768px) {
+      section.header {
+        display: block; } }
   section.description {
     background-position: 50%;
     /*background-attachment: fixed;*/
