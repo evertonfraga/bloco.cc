@@ -208,7 +208,7 @@ section {
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(../images/bg-multiuso.jpg); }
+    background-image: url(../images/bg-02.jpg); }
     @media (min-width: 1024px) {
       section.features {
         background-attachment: fixed; } }
