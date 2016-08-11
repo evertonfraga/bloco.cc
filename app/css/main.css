@@ -133,9 +133,9 @@ section {
       height: 100vh;
       object-fit: cover;
       display: none; }
-    @media (min-width: 768px) {
-      section.header {
-        display: block; } }
+      @media (min-width: 768px) {
+        section.header video {
+          display: block; } }
   section.description {
     background-position: 50%;
     /*background-attachment: fixed;*/
