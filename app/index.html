@@ -72,7 +72,12 @@
             O Bloco em Botafogo é um dos espaços mais abertos que você pode encontrar no Rio de Janeiro.
           </p>
           <p>
-          Além de ser a concentração oficial da <a href="http://perestroika.com.br" target="_blank">Perestroika</a>, <a href="http://vandal.com.br" target="_blank">Vandal</a> e <a href="http://olabi.co" target="_blank">Olabi</a>, a casa é um ambiente multicultural que reúne iniciativas ligadas a Educação, Empreendedorismo, Entretenimento, Cultura e Arte. 
+            Além de ser a concentração oficial da
+            <a href="http://perestroika.com.br" target="_blank">Perestroika</a>,
+            <a href="http://vandal.com.br" target="_blank">Vandal</a>,
+            <a href="http://www.perestroika.com.br/sputnik" target="_blank">Sputnik</a> e
+            <a href="http://olabi.co" target="_blank">Olabi</a>,
+            a casa é um ambiente multicultural que reúne iniciativas ligadas a Educação, Empreendedorismo, Entretenimento, Cultura e Arte. 
           </p>
         </div>
       </div>
@@ -148,7 +153,7 @@
     <div class="container">
       <h2><a name="agenda">Agenda</a></h2>
       <div class="row">
-        <div class="twelve columns">
+        <div class="six twelve center">
           <p>
             Assine nossos eventos e fique por dentro do Bloco.
           </p>
@@ -157,7 +162,19 @@
             Facebook Events
           </a>
         </div>
-      </div>
+<!--         <div class="six columns center">
+          <form action="">
+            <p>
+              <label for="email">Inscreva-se na nossa lista de e-mails.</label>
+            </p>
+            <input type="text" placeholder="E-mail" style="padding: 1.1em 0.8em 0.9675em;">
+            <button class="button send-mail">
+              <i class="fa fa-chevron-right"></i>
+            </button>
+          </form>
+      
+        </div>
+ -->      </div>
     </div>
   </section>
 
@@ -172,6 +189,11 @@
         <a class="button" href="mailto:foliao@bloco.cc">
           <i class="fa fa-envelope-o"></i>
           foliao@bloco.cc
+        </a>
+
+        <a class="button" href="tel:(21) 99797-5127">
+          <i class="fa fa-envelope-o"></i>
+          (21) 99797-5127
         </a>
       </div>
     </div>
@@ -208,12 +230,10 @@
         Rio de Janeiro - RJ
       </address>
       <div class="twelve columns">
-        <!-- <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJT_vo291_mQARSYvlUIvIYAw&key=AIzaSyCpFtJEYLy1dfc20iVM8R783j20GYdXanI" allowfullscreen></iframe> -->
         <div id="map-canvas" class="google-maps" style="width:100%; height: 400px;"></div>
       </div>
     </div>
   </section>
-
  
   <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
   <script src="js/jquery.stellar.min.js"></script>
@@ -221,7 +241,6 @@
   <script src="js/countdown.min.js"></script>
   <script src="js/jquery.montage.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?sensor=false&key=AIzaSyCpFtJEYLy1dfc20iVM8R783j20GYdXanI"></script>
-
 
   <script>
     var isMobile = {
@@ -276,6 +295,7 @@
         else
           $container.css('top', 0);
       });
+
       $(window).on('resize', function(){
         $galleryContainer.css('top', 0);
       });
@@ -324,13 +344,7 @@
                                   '<a href="http://maps.google.com/maps?z=12&t=m&q=loc:-22.952498,-43.195771" target="_blank"> Bloco </a>'+
                               '</div>'+
                           '</div>';
-
-      // var infowindow = new google.maps.InfoWindow({
-      //   content: contentString
-      // });
-      // infowindow.open(map,marker);
       map.panBy(0, -40);
-
     });
   </script>
   <script>
@@ -358,9 +372,6 @@
               margin: 5
             });
             
-            /* 
-             * just for this demo:
-             */
             $('#overlay').fadeIn(500);
           }
         }).attr('src',$img.attr('src'));

@@ -405,3 +405,9 @@ section.header, section.localizacao {
   .am-container .espaco-desc p {
     font-size: 0.8em;
     margin-bottom: 0; }
+
+.send-mail {
+  margin-left: -11px; }
+  .send-mail i::before {
+    position: relative;
+    top: 2px; }
